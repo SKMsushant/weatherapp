@@ -13,7 +13,7 @@ def homepage():
 def get_weatherdata():
     url="http://api.weatherapi.com/v1/current.json?key=fe233e7c62774816bde163107240801"
     param={'q':request.form.get("city"),
-           'days':int(request.form.get("days")),
+           'days':int(request.form.get("days"))
            }
     response=requests.get(url,params=param)
     
